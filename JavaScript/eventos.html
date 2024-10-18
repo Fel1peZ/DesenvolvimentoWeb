@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img onclick="mensagem('Waddles gosta de carinho')" ondblclick="mensagem('Waddles adora carinho')"  src="https://i.pinimg.com/564x/93/d0/fb/93d0fbc75ad548fe607678714df4db32.jpg" alt="">
+    <p></p>
+
+
+    <script>
+
+        function mensagem(msg){ 
+            let msgclick = document.getElementsByTagName('p')
+            msgclick[0].innerText = msg
+        }   
+
+
+    </script>
+</body>
+</html>

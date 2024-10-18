@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+
+
+</head>
+
+<body>
+
+    <p id="paragrafo">NADA</p>
+    <div class="caixa">aaaaaaaa</div>
+    <div class="caixa">aaaaaaaa</div>
+    <div class="caixa">aaaaaaaa</div>
+
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+
+    <ul>
+        
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+
+    <script>
+        let p = document.getElementById("paragrafo")
+        p.innerText = "Olá mundo"
+        p.style.fontSize = '50px'
+
+        let caixas = document.getElementsByClassName('caixa')
+        
+        caixas[0].style.backgroundColor = 'blue'
+        caixas[1].style.backgroundColor = 'blue'
+        caixas[2].style.backgroundColor = 'blue'
+
+        let paragrafo = document.getElementsByTagName('p')
+        paragrafo[2].innerText = "TEXTO ALTERADO"
+
+        let lista = document.querySelector('li')
+        lista.style.backgroundColor = 'red'
+
+
+    </script>
+</body> 
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+     
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <button>Iniciar contagem regressiva</button>
+    
+
+
+
+    <script>
+
+        let contador = 10;
+        let botao = document.querySelector('button')
+        const regressiva = document.querySelector('h1');
+        botao.addEventListener("click",()=>{
+
+            let intervalo = setInterval(()=>{
+            regressiva.innerText = contador;
+            contador--;
+
+            if(contador < 0){
+                clearInterval(intervalo);
+                regressiva.innerText = "Tempo Esgotado!!";
+            }
+        },1000)
+
+        })
+        
+
+        
+    </script>
+</body>
+</html>
